@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 64.2%;
+}
+:root{
+    --Lightgray: hsl(180, 52%, 96%);
+    --LightGrayish: hsl(180, 31%, 95%);
+     --DarkGrayish: hsl(180, 8%, 52%);
+     --VeryDark: hsl(180, 14%, 20%);
+     --DarkCyan: hsl(180, 29%, 50%);
+     --white:white;
+}
+body{
+   background-color: var(--Lightgray);
+   font-family: Arial, Helvetica, sans-serif;
+   position: relative;
+}
+#desktop{
+    width: 100%;
+    background-color: var(--DarkCyan);
+    height: 15vh;
+}
+.list{
+    width: 90rem;
+    margin: 5rem auto 0;
+}
+.list li{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white);
+    padding: 1rem 2.5rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin-bottom: 2rem;
+}
+.list li::after{
+    content: " ";
+    width: 0.3rem;
+    height: 0;
+    background-color: var(--DarkGrayish);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.list li:hover::after{
+    height: 100%;
+}
+.list-left{
+    display: flex;
+}
+#pimg{
+    width: 6rem;
+    height: 6rem;
+    margin-top: 0.5rem;
+}
+.details{
+    margin-left: 2rem;
+}
+.detail1{
+    display: flex;
+}
+.name{
+    color: var(--DarkCyan);
+    font-size: 1.6rem;
+    font-weight:bold;
+}
+.new{
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    padding: 0.4rem 0.7rem;
+    border-radius: 1rem;
+    background-color: var(--DarkCyan);
+    color: var(--white);
+    border: 0;
+}
+.feature{
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    padding: 0.4rem;
+    border-radius: 0.8rem 1rem;
+    background-color: var(--VeryDark);
+    color: var(--white);
+    border: 0;
+}
+.role{
+    font-size: 1.7rem;
+    margin-top: 0.5rem;
+}
+.detail2{
+    display: flex;
+}
+.detail2 p{
+    font-size: 1.3rem;
+    margin: 0.5rem 2rem;
+    color: gray;
+    position: relative;
+}
+.detail2 p:first-child{
+    margin-left: 0;
+}
+.detail2 p:first-child::after{
+    height: 0;
+}
+.detail2 p::after{
+    content: " ";
+    height: 0.3rem;
+    width: 0.3rem;
+    border-radius: 50%;
+    background-color: gray;
+    position: absolute;
+    left: -2rem;
+    top: 0.6rem;
+}
+.list-right{
+  display: flex;
+}
+.list-right p{
+    margin: 2.3rem 1rem;
+    font-size: 1.2rem;
+    color: var(--DarkCyan);
+    background-color: var(--Lightgray);
+    height: 2rem;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+#searchbox{
+    width: 80%;
+    position: absolute;
+    top: 9rem;
+    right: 10% ;
+    height: 4rem;
+    outline: none;
+    font-size: 1.5rem;
+}
+.clear{
+    top: 10rem;
+    right: 12%;
+    font-size: 1.5rem;
+    position: absolute;
+    color: var(--DarkCyan);
+    cursor: pointer;
+}
+@media screen and (max-width:1000px) {
+    .list{
+        width: 70rem;
+        margin: 5rem auto 0;
+    }
+    .detail2 p{
+        font-size: 1.3rem;
+        margin: 0.5rem 1rem;
+    }
+    .list-right p{
+        margin: 2.3rem 0.6rem;
+    }
+    .detail2 p::after{
+        left: -1rem;
+    }
+}
+@media screen and (max-width:800px) {
+    .list{
+        width: 90%;
+        margin: 5rem auto 0;
+    }
+    .detail2 p{
+        font-size: 1.3rem;
+        margin: 0.5rem 1rem;
+    }
+    .list-right p{
+        margin: 2.3rem 0.6rem;
+    }
+    .detail2 p::after{
+        left: -1rem;
+    }
+}
+@media screen and (max-width:780px) {
+    #desktop{
+        background-image: url(images/bg-header-mobile.svg);
+    }
+    .list li{
+        display: block;
+        position: relative;
+        margin-bottom: 4rem;
+    }
+    .list li::after{
+        width: 0.4rem;
+    }
+    .list-left{
+        display: block;
+        border-bottom: 0.1rem solid gray;
+        padding-bottom: 1rem;
+    }
+    #pimg{
+        position: absolute;
+        top: -3rem;
+        width: 5rem;
+        height: 5rem;
+    }
+    .details{
+        margin-top: 3rem;
+        margin-left: 0;
+    }
+    .list-right{
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top:1rem ;
+    }
+    .list-right p{
+        margin: 0.7rem 1rem;
+    }
+    .role{
+        margin-top: 1rem;
+    }
+    .detail2{
+        margin-top: 0.7rem;
+    }
+}

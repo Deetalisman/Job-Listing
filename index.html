@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Job Listings</title>
+  <link rel="stylesheet" href="main.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <img src="images/bg-header-desktop.svg" id="desktop">
+  <input type="text" id="searchbox">
+  <p class="clear">clear</p>
+  <ul class="list">
+    <li>
+      <div class="list-left">
+        <img src="images/photosnap.svg" id="pimg">
+        <div class="details">
+          <div class="detail1">
+            <p class="name">Photoshop</p>
+            <button class="new">NEW!</button>
+            <button class="feature">FEATURED</button>
+          </div>
+          <h2 class="role">Senior Frontend Developer</h2>
+          <div class="detail2">
+            <p>1d ago</p>
+            <p>Full Time</p>
+            <p>USA only</p>
+          </div>
+        </div>
+      </div>
+      <div class="list-right">
+        <p>Frontend</p>
+        <p>Senior</p>
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>Javascript</p>
+      </div>
+    </li>
+    <li>
+      <div class="list-left">
+        <img src="images/manage.svg" id="pimg">
+        <div class="details">
+          <div class="detail1">
+            <p class="name">Manage</p>
+            <button class="new">NEW!</button>
+            <button class="feature">FEATURED</button>
+          </div>
+          <h2 class="role">Fullstack Developer</h2>
+          <div class="detail2">
+            <p>1d ago</p>
+            <p>Part Time</p>
+            <p>Remote</p>
+          </div>
+        </div>
+      </div>
+      <div class="list-right">
+        <p>Fullstack</p>
+        <p>Midweight</p>
+        <p>Python</p>
+        <p>React</p>
+      </div>
+    </li>
+    <li>
+      <div class="list-left">
+        <img src="images/account.svg" id="pimg">
+        <div class="details">
+          <div class="detail1">
+            <p class="name">Account</p>
+            <button class="new">NEW!</button>
+          </div>
+          <h2 class="role">Junior Frontend Developer</h2>
+          <div class="detail2">
+            <p>2d ago</p>
+            <p>Part Time</p>
+            <p>USA only</p>
+          </div>
+        </div>
+      </div>
+      <div class="list-right">
+        <p>Frontend</p>
+        <p>Senior</p>
+        <p>HTML</p>
+        <p>Sass</p>
+        <p>Javascript</p>
+      </div>
+      </div>
+    </li>
+    <li>
+      <div class="list-left">
+        <img src="images/myhome.svg" id="pimg">
+        <div class="details">
+          <div class="detail1">
+            <p class="name">My home</p>
+          </div>
+          <h2 class="role">Junior Frontend Developer</h2>
+          <div class="detail2">
+            <p>5d ago</p>
+            <p>Contract</p>
+            <p>USA only</p>
+          </div>
+        </div>
+      </div>
+      <div class="list-right">
+        <p>Frontend</p>
+        <p>Junior</p>
+        <p>CSS</p>
+        <p>Javascript</p>
+      </div>
+      </div>
+    </li>
+    <li>
+      <div class="list-left">
+        <img src="images/loop-studios.svg" id="pimg">
+        <div class="details">
+          <div class="detail1">
+            <p class="name">Loop Studios</p>
+          </div>
+          <h2 class="role">Software Engineer</h2>
+          <div class="detail2">
+            <p>1w ago</p>
+            <p>Full Time</p>
+            <p>Worldwide</p>
+          </div>
+        </div>
+      </div>
+      <div class="list-right">
+        <p>Fullstack</p>
+        <p>Midweight</p>
+        <p>Javascript</p>
+        <p>Sass</p>
+        <p>Ruby</p>
+      </div>
+      </div>
+    </li>
+    <li>
+      <div class="list-left">
+        <img src="images/faceit.svg" id="pimg">
+        <div class="details">
+          <div class="detail1">
+            <p class="name">FaceIt</p>
+          </div>
+          <h2 class="role">Junior Backend Developer</h2>
+          <div class="detail2">
+            <p>2w ago</p>
+            <p>Full Time</p>
+            <p>UK only</p>
+          </div>
+        </div>
+      </div>
+      <div class="list-right">
+        <p>Backend</p>
+        <p>Junior</p>
+        <p>Ruby</p>
+        <p>RoR</p>
+      </div>
+      </div>
+    </li>
+    <li>
+      <div class="list-left">
+        <img src="images/shortly.svg" id="pimg">
+        <div class="details">
+          <div class="detail1">
+            <p class="name">Shortly</p>
+          </div>
+          <h2 class="role">Junior Developer</h2>
+          <div class="detail2">
+            <p>2w ago</p>
+            <p>Full Time</p>
+            <p>Worldwide</p>
+          </div>
+        </div>
+      </div>
+      <div class="list-right">
+        <p>Frontend</p>
+        <p>Junior</p>
+        <p>HTML</p>
+        <p>Sass</p>
+        <p>Javascript</p>
+      </div>
+      </div>
+    </li>
+    <li>
+      <div class="list-left">
+        <img src="images/insure.svg" id="pimg">
+        <div class="details">
+          <div class="detail1">
+            <p class="name">Insecure</p>
+          </div>
+          <h2 class="role">Junior Frontend Developer</h2>
+          <div class="detail2">
+            <p>2w ago</p>
+            <p>Full Time</p>
+            <p>USA only</p>
+          </div>
+        </div>
+      </div>
+      <div class="list-right">
+        <p>Frontend</p>
+        <p>Junior</p>
+        <p>Vue</p>
+        <p>Javascript</p>
+        <p>Sass</p>
+      </div>
+      </div>
+    </li>
+    <li>
+      <div class="list-left">
+        <img src="images/eyecam-co.svg" id="pimg">
+        <div class="details">
+          <div class="detail1">
+            <p class="name">Eyecam Co.</p>
+          </div>
+          <h2 class="role">Junior Frontend Developer</h2>
+          <div class="detail2">
+            <p>3w ago</p>
+            <p>Full Time</p>
+            <p>Worldwide</p>
+          </div>
+        </div>
+      </div>
+      <div class="list-right">
+        <p>Fullstack</p>
+        <p>Midweight</p>
+        <p>Javascript</p>
+        <p>Django</p>
+        <p>Python</p>
+      </div>
+      </div>
+    </li>
+  </ul>
+  <script src="./index.js  "></script>
+</body>
+</html>
